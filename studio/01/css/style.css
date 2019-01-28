@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.numbertext{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: left;
+  color: rgb(105, 105, 105);
+}
+img{
+  width: 100%;
+}
+.container{
+  display:table;
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+.mySteps{
+  float: left;
+  margin:50px;
+}
+body{
+  background-color: rgb(180, 180, 180);
+}
