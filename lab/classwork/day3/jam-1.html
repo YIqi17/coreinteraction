@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+</head>
+<style>
+    html {
+        font-family: 'Fjalla One', sans-serif;
+        ;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px auto;
+    }
+    .title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display:flex;
+        justify-content: center;
+    }
+    .sidebar{
+        background-color: aquamarine;
+
+    }
+    .content{
+        padding:1em;
+    }
+    /*mobile layout*/
+    @media not all and (hover) {
+        .sidebar,.content{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        h1{
+            font-size: 400%;
+        }
+        body{
+            grid-template-rows: 200px auto;
+        }
+        .sidebar{
+            justify-content: center;
+            display: flex;
+            font-size: 120%;
+        }
+        ul{
+            list-style: none;
+            margin-left: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="title">
+        <h1>Yiqi Wang</h1>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li>draw</li>
+            <li>eat</li>
+            <li>breath</li>
+            <li>shit</li>
+            <li>study</li>
+            <li>struggle</li>
+            <li>love</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h3>Sushi</h3>
+        <p>words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</p>
+    </div>
+</body>
+
+</html>
