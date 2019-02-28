@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Generate Random Color Bar
+    </title>
+</head>
+
+<body>
+    <style>
+        .bar {
+            width: auto;
+            height: 5vh;
+        }
+    </style>
+    <script>
+        function rand(min, max) {
+            return parseInt(Math.random() * (max - min + 1), 10) + min;
+        }
+
+        var digits = 0;
+        var num = Math.floor(Math.random()*10)+1;
+        while (digits < num) {
+            var bar = document.createElement('div');
+            bar.className = 'bar';
+            bar.style.height = 100/num + "vh";
+            bar.style.backgroundColor = generateRandomColorString();
+            document.body.appendChild(bar);
+            digits = digits + 1;
+        }
+
+        function generateRandomColorString() {
+            var h = rand(1, 360);
+            var s = rand(40, 100);
+            var l = rand(70, 100);
+            return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+        }
+    </script>
+</body>
+
+</html>

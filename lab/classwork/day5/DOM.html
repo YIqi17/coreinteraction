@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+<body>
+<script>
+
+console.log(document);
+//dot means inside a tag(nested)
+document.body.style.backgroundColor ="red";
+//create an html element
+var header = document.createElement("h1");
+console.log(header);
+//put it on the page
+document.body.appendChild(header);
+//innerHTML is the space between opening and closing tags
+header.innerHTML="Kaylie";
+var image = document.createElement("img");
+document.body.appendChild(image);
+//bad code!!
+// image.src = "hello.gif";
+//good code
+image.setAttribute("src","giphy.gif");
+
+</script>
+</body>
+</html>
