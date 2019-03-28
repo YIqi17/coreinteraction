@@ -15,9 +15,6 @@
         }
     </style>
     <script>
-        function rand(min, max) {
-            return parseInt(Math.random() * (max - min + 1), 10) + min;
-        }
 
         var digits = 0;
         var num = Math.floor(Math.random()*10)+1;
@@ -31,9 +28,9 @@
         }
 
         function generateRandomColorString() {
-            var h = rand(1, 360);
-            var s = rand(40, 100);
-            var l = rand(70, 100);
+            var h = Math.floor(Math.random()*360);
+            var s = Math.floor(Math.random()*101);
+            var l = Math.floor(Math.random()*101);
             return 'hsl(' + h + ',' + s + '%,' + l + '%)';
         }
     </script>

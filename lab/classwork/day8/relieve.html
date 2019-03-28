@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title> </title>
+<script>
+//7 things that can go in a variable
+var nothing=undefined;
+//var nothing; is the same
+var bool=true;
+var string="hi";
+var number=5;
+var array=[];
+var object={};
+var func = function(argument){};
+//1.put code for later
+//2.arguments
+//3.return value
+var weatherArray=[
+    5,20,false
+];
+console.log(weatherArray);
+console.log(weatherArray[1]);
+//we dont know what the variables are, this is what object solves
+var weather ={
+temperature: 5,
+humidity:20,
+isRaining:false 
+};
+console.log(weather);//no order
+console.log(weather['humidity']);//has to put quotation mark
+//array is number, object is in words
+console.log(weather.humidity); //dot is going to inside of a thing
+console.log(console);//console is an object
+console['log']("hello");
+//level 1:"NYC","Beijing"
+//level 2:"temperatures"...
+//level 3: for temp only: array of numbers
+var weathers ={
+NYC:{temperature:[20,3,32],humidity:3,raining:true},
+Beijing:{temperature:[40,3,32],humidity:3,raining:false}
+};
+console.log(weathers);
+</script>
